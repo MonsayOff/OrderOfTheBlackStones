@@ -89,3 +89,63 @@ header h1 {
 .wiki-table tr:nth-child(even) {
     background-color: #1f1f24;
 }
+
+.item-icon {
+    max-width: 48px; /* Ограничиваем максимальный размер */
+    max-height: 48px;
+    image-rendering: pixelated; /* Делает пиксель-арт четким, убирает размытие */
+    display: block;
+    margin: 0 auto; /* Центрирует иконку в ячейке */
+}
+
+/* Выравнивание содержимого таблиц по центру */
+.wiki-table td, .wiki-table th {
+    vertical-align: middle;
+}
+
+.wiki-section {
+    background-color: #1f1f24;
+    border: 1px solid #29292e;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.wiki-section-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #ffca28;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+/* Сетка для предметов */
+.item-grid {
+    display: grid;
+    /* Создаем колонки. Минимальная ширина элемента - 200px, максимальная - 1 часть доступного пространства */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+/* Ссылка-карточка предмета */
+.item-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #a8a8b3;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.item-link:hover {
+    background-color: #29292e;
+    color: #ffffff;
+}
+
+.item-link img {
+    max-width: 32px; /* Размер иконки в сетке */
+    max-height: 32px;
+    margin-right: 10px;
+    image-rendering: pixelated; /* Сохраняем пиксель-арт четким */
+}
