@@ -68,3 +68,24 @@ header h1 {
     padding: 20px;
     border-radius: 8px;
 }
+
+.wiki-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.wiki-table th, .wiki-table td {
+    border: 1px solid #29292e;
+    padding: 10px;
+    text-align: left;
+}
+
+.wiki-table th {
+    background-color: #29292e;
+    color: #9966ff;
+}
+
+.wiki-table tr:nth-child(even) {
+    background-color: #1f1f24;
+}
