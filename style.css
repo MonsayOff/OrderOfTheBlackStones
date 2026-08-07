@@ -149,3 +149,14 @@ header h1 {
     margin-right: 10px;
     image-rendering: pixelated; /* Сохраняем пиксель-арт четким */
 }
+
+header h1 a {
+    color: #9966ff;
+    text-decoration: none; /* Убирает подчеркивание */
+    transition: color 0.2s; /* Плавная смена цвета при наведении */
+}
+
+/* Эффект при наведении курсора на заголовок */
+header h1 a:hover {
+    color: #b388ff; /* Делает цвет чуть светлее */
+}
