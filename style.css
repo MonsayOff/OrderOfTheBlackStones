@@ -34,13 +34,19 @@ header h1 {
 }
 
 .sidebar h3 {
-    margin-top: 0;
+    margin-top: 25px;
+    margin-bottom: 10px;
     color: #9966ff;
+}
+
+.sidebar h3:first-child {
+    margin-top: 0;
 }
 
 .sidebar ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .sidebar li {
